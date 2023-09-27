@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="btn--dark">
+    </div>
+      <form class="calculator" name="calc">
+        <input type="text" name="val" readonly="" class="txt"/>
+        <input type="button" value = 'AC' class="btn allclear" onclick="document.calc.val.value = ''">
+        <input type="button" value = 'C' class="btn clear" onclick="document.calc.val.value = ''">
+        <input type="button" value = '%' class="btn" onclick="document.calc.val.value += '%'">
+        <input type="button" value = '/' class="btn" onclick="document.calc.val.value += '/'">
+        <input type="button" value = '7' class="btn" onclick="document.calc.val.value += '7'">
+        <input type="button" value = '8' class="btn" onclick="document.calc.val.value += '8'">
+        <input type="button" value = '9' class="btn" onclick="document.calc.val.value += '9'">
+        <input type="button" value = '-' class="btn" onclick="document.calc.val.value += '-'">
+        <input type="button" value = '4' class="btn" onclick="document.calc.val.value += '4'">
+        <input type="button" value = '5' class="btn" onclick="document.calc.val.value += '5'">
+        <input type="button" value = '6' class="btn" onclick="document.calc.val.value += '6'">
+        <input type="button" value = '*' class="btn" onclick="document.calc.val.value += '*'">
+        <input type="button" value = '3' class="btn" onclick="document.calc.val.value += '3'">
+        <input type="button" value = '2' class="btn" onclick="document.calc.val.value += '2'">
+        <input type="button" value = '1' class="btn" onclick="document.calc.val.value += '1'">
+        <input type="button" value = '+' class="btn plus" onclick="document.calc.val.value += '+'">
+        <input type="button" value = '0' class="btn" onclick="document.calc.val.value += '0'">
+        <input type="button" value = '00' class="btn" onclick="document.calc.val.value += '00'">
+        <input type="button" value = '.' class="btn" onclick="document.calc.val.value += '.'">
+        <input type="button" value = '=' class="btn" onclick="document.calc.val.value = eval(calc.val.value)">
+    </form>
+    <script src="script.js"></script> 
+  </body>
+</html>

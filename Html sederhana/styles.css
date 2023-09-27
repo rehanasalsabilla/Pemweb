@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Gaya untuk header */
+  header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Gaya untuk menu navigasi */
+  .navbar {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #1a68a4;
+  }
+  
+  /* Gaya untuk gambar */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Gaya untuk kolom sisi */
+  .column.side {
+    float: left;
+    width: 30%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Gaya untuk teks yang diwarnai tebal */
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  /* Gaya untuk kutipan */
+  p {
+    font-style: italic;
+    margin-top: 0;
+  }
+  
+  /* Gaya untuk tombol "Follow Me!" */
+  .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1a68a4;
+  }
+  
+  /* Gaya untuk formulir */
+  form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="pesan"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1a68a4;
+  }
+  
+  /* Gaya untuk kartu media sosial */
+  .card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card i {
+    font-size: 40px;
+    color: #3498db;
+  }
+  
+  /* Gaya untuk judul "Let's Connect With Me" */
+  h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  /* Gaya untuk tautan sosial media */
+  .card h1 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #3498db;
+  }
+  
+  /* Gaya untuk footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+  }
+  
