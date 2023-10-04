@@ -1,0 +1,62 @@
+<script>
+    // Fungsi untuk mengambil data cuaca dari API
+    function getWeather() {
+      var cityName = document.getElementById("city").value;
+      var apiKey = "f445c6be5846be5c8cce39f60fda7ca1"; 
+      var url = "https://api.openweathermap.org/data/2.5/weather?q=" +
+        cityName +
+        "&appid=" +
+        apiKey;
+  
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+  
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          displayWeather(data);
+        } else {
+          console.error('Gagal mengambil data cuaca.');
+        }
+      };
+  
+      xhr.send();
+    }
+  
+    // Fungsi untuk menampilkan data cuaca di halaman web
+    function displayWeather(data) {
+      document.getElementById('result').innerHTML = `
+        <h2>Cuaca di ${data.name}</h2>
+        <p>Suhu: ${data.main.temp}°C</p>
+        <p>Kondisi Cuaca: ${data.weather[0].description}</p>
+        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Kondisi Cuaca">
+      `;
+    }
+  </script>
+  
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1 class="mb-4">Cek Cuaca</h1>
+                <div class="input-group mb-3">
+                    <input type="text" id="city" class="form-control" placeholder="Masukkan nama kota" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="getWeather()">Cek Cuaca</button>
+                    </div>
+                </div>
+                <div id="result" class="mt-4">
+                    <!-- Hasil cuaca akan ditampilkan di sini -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tambahan: Menggunakan Bootstrap untuk tampilan yang lebih menarik -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+  
